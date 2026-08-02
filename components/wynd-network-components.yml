@@ -1,0 +1,16 @@
+generated: '2026-07-21'
+method: searched
+source: https://www.npmjs.com/package/@getgrass/components
+notes: >-
+  Grass publishes a first-party client-side component library on npm used by
+  the Grass applications (app.grass.io and related surfaces). It is a design
+  system / UI kit rather than an embeddable product surface, and there is no
+  hosted or embedded component offering documented for third parties.
+families:
+- family: Grass UI components
+  loader: '@getgrass/components'
+  registry: npm
+  url: https://www.npmjs.com/package/@getgrass/components
+  repository: https://github.com/Wynd-Network/components
+  official: true
+  audience: first-party applications

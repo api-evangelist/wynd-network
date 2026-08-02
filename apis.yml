@@ -1,8 +1,24 @@
 aid: wynd-network
 name: Wynd Network
-description: 'Wynd Network is a company surfaced as a portfolio company of polychain and added to the
-  API Evangelist network as a stub for enrichment. Sector: depin. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Wynd Network (now operating as Wynd Labs) is the company behind Grass,
+  a decentralized physical infrastructure network (DePIN) on Solana that rewards
+  users for sharing their unused internet bandwidth. The Grass Network routes and
+  verifies web traffic through a network of nodes, routers, and validators to collect
+  and structure public web data for AI training and business intelligence. Grass
+  ships consumer apps and a node network rather than a public developer API; its
+  documentation covers network architecture, the GRASS token, staking, and points.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.grass.io/favicon/android-chrome-512x512.png
 url: https://raw.githubusercontent.com/api-evangelist/wynd-network/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +26,22 @@ x-backed-by:
 - polychain
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 5
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Depin
+- Bandwidth
+- Web Scraping
+- AI Training Data
+- Cryptocurrency
+- Solana
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,31 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/wynd-network-domain-security.yml
 - type: Website
-  url: https://wynd.network
+  url: https://wyndlabs.ai/
+- type: Documentation
+  url: https://grass-foundation.gitbook.io/grass-docs
+- type: GettingStarted
+  url: https://grass-foundation.gitbook.io/grass-docs/introduction/getting-started
+- type: Blog
+  url: https://www.grass.io/learn
+- type: Support
+  url: https://discord.gg/getgrass
+- type: GitHubOrganization
+  url: https://github.com/Wynd-Network
+- type: SignUp
+  url: https://app.grass.io/register
+- type: Login
+  url: https://app.grass.io/login
+- type: TermsOfService
+  url: https://www.grass.io/terms-and-conditions
+- type: PrivacyPolicy
+  url: https://www.grass.io/privacy-policy
+- type: LLMsTxt
+  url: llms/wynd-network-llms.txt
+- type: Packages
+  url: packages/wynd-network-packages.yml
+- type: Components
+  url: components/wynd-network-components.yml

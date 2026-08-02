@@ -1,0 +1,78 @@
+generated: '2026-07-21'
+method: searched
+notes: >-
+  No /.well-known/ discovery documents were found on any Wynd Network /
+  Grass host. wynd.network 301-redirects all paths to https://wyndlabs.ai/,
+  which then returns 404 for well-known paths. The GitBook docs host serves
+  an llms.txt (captured in llms/wynd-network-llms.txt); no host serves a
+  security.txt, OIDC discovery, OAuth metadata, api-catalog, or ai-plugin
+  document. Absence recorded as valid probe data.
+hosts:
+- host: https://wynd.network
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+    redirect: https://wyndlabs.ai/
+  - path: /.well-known/openid-configuration
+    status: 301
+    redirect: https://wyndlabs.ai/
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+    redirect: https://wyndlabs.ai/
+  - path: /.well-known/api-catalog
+    status: 301
+    redirect: https://wyndlabs.ai/
+  - path: /.well-known/ai-plugin.json
+    status: 301
+    redirect: https://wyndlabs.ai/
+- host: https://wyndlabs.ai
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+- host: https://www.grass.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://app.grass.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://api.getgrass.io
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://grass-foundation.gitbook.io/grass-docs
+  documents:
+  - path: /llms.txt
+    status: 200
+    file: ../llms/wynd-network-llms.txt
