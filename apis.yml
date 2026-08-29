@@ -7,6 +7,17 @@ description: 'Wynd Network (now operating as Wynd Labs) is the company behind Gr
   and structure public web data for AI training and business intelligence. Grass
   ships consumer apps and a node network rather than a public developer API; its
   documentation covers network architecture, the GRASS token, staking, and points.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
